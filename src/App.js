@@ -1,23 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import './style.css';
-import Gallery from './components/Gallery';
-import Navbar from './components/Navbar';
+import AnimatedComponent from './components/Animated';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
-        <Switch>
+        <AnimatedComponent />
+        {/* <Switch>
           <Route exact path="/portfolio">
             <Gallery />
           </Route>
           <Route exact path="/">
-            <h3>Chris Paradeise is leet.</h3>
           </Route>
-        </Switch>
+        </Switch> */}
         <div className="bg-img"></div>
       </div>
     </Router>
