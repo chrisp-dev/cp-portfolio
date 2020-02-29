@@ -17,12 +17,12 @@ export default function Gallery() {
 
     return (
         <>
-            <ul style={{ listStyle: 'none' }}>
+            <ul className="flex flex-auto w-full" style={{ listStyle: 'none' }}>
                 {projects.map(project => {
                     return (
-                        <li key={project.id}>
+                        <li className="w-full p-4 m-4 rounded bg-gray-300" key={project.id}>
                             <h3>{project.name}</h3>
-                            <img style={{ width: '200px', height: '200px' }} src={project.imageSrc} alt={project.name} />
+                            <img className="object-contain" style={{ width: '300px', height: '300px' }} src={project.imageSrc} alt={project.name} />
                         </li>
                     )
                 })}

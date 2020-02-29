@@ -1,0 +1,24 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1 {
+    @apply text-2xl;
+    @apply font-bold;
+}
+p {
+    @apply text-sm;
+    @apply font-semibold;
+}
+h3 {
+    @apply font-semibold;
+}
+
+button {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply bg-blue-500;
+    @apply text-white;
+    @apply rounded-full;
+    padding: 8px;
+}
