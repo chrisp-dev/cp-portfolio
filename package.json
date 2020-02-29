@@ -1,6 +1,7 @@
 {
   "name": "cp-portfolio",
   "version": "0.1.0",
+  "author": "Chris Paradeise",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
     "react-spring": "^8.0.27",

@@ -13,9 +13,11 @@ import Card from '../Card';
 import moshPNG from '../../assets/Images/mosh.PNG';
 import proj2Png from '../../assets/Images/proj2.PNG';
 import Contact from '../Contact';
+import Resume from '../Resume';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const pages = [
-    ({ style }) => <animated.div style={{ ...style, background: 'rgba(200,40,40,0.2)' }}>
+    ({ style }) => <animated.div style={{ ...style }}>
         <Card
             synopsis="Built with AngularJS Frontend and ColdFusion Backend"
             imgSrc={proj2Png}
@@ -26,8 +28,10 @@ const pages = [
         <Card
             imgSrc={moshPNG} alt="UW Project 3 - MOSH Social App"
             synopsis="Built with ReactJS, MySQL, Sequelize, Express, Socket.IO, React-Spring and TailwindCSS" />
+        <FontAwesomeIcon icon="arrow-right"></FontAwesomeIcon>
+
     </animated.div>,
-    ({ style }) => <animated.div style={{ ...style, background: 'rgba(40,210,20,0.2)' }}>
+    ({ style }) => <animated.div style={{ ...style }}>
         <Card
             synopsis="Built with AngularJS Frontend and ColdFusion Backend"
             imgSrc={CatLeaderImg}
@@ -38,10 +42,14 @@ const pages = [
         <Card
             imgSrc={workschedulePng} alt="9-5 Work Scheduler"
             synopsis="Built with Dynamic jQuery DOM Manipulation" />
+        <FontAwesomeIcon icon="arrow-right"></FontAwesomeIcon>
+
     </animated.div>,
-    ({ style }) => <animated.div style={{ ...style, background: 'rgba(40,10,210,0.2)' }}>
+    ({ style }) => <animated.div style={{ ...style }}>
         <Contact />
-    </animated.div>,
+        <FontAwesomeIcon className="ml-16" icon="arrow-right"></FontAwesomeIcon>
+
+    </animated.div>
 ]
 
 export default function AnimatedComponent() {
